@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="jumbotron text-center">
+    <h1>Assignment One</h1>
+  </div>
+  <div class="row">
+    <div class="col-12" *ngIf="isParagrapVisible">
+      <p>
+        {{ paragraph }}
+      </p>
+    </div>
+    <div class="col-12">
+      <p>You have clicked {{ noOfClicks }} time</p>
+    </div>
+    <div class="col-12">
+      <button (click)="handleParagraphVisible()" class="btn btn-primary">
+        Click Me
+      </button>
+    </div>
+  </div>
+  <div class="row my-2">
+    <div class="col-6">
+      <div class="form-group">
+        <input
+          [(ngModel)]="addedText"
+          type="text"
+          class="form-control"
+          placeholder="Enter a text"
+        />
+      </div>
+    </div>
+    <div class="col-6">
+      <button (click)="addText()" class="btn btn-primary">Add</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <ul *ngFor="let item of list; index as i">
+        <li [ngClass]="{ blue: (i + 1) % 5 === 0 }">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
