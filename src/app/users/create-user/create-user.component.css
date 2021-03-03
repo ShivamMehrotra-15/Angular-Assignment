@@ -1,0 +1,19 @@
+input.ng-invalid.ng-touched{
+  border: 1px solid red
+}
+
+.error{
+  color: red;
+  font-size: 12px;
+}
+
+.form-container{
+  margin-top : 50px;
+  padding: 50px;
+  box-shadow : inset 0 0 10px lightblue;
+  margin-bottom: 50px;
+}
+
+.genderLabel{
+  margin-right: 15px;
+}

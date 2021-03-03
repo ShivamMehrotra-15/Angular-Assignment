@@ -1,0 +1,30 @@
+.navbar-container{
+  padding: 25px ;
+  background-color: #004953;
+}
+.nav{
+  display: flex;
+  justify-content:space-around;
+}
+.nav-link {
+  font-size : 32px;
+  font-weight : bold;
+  box-sizing: border-box;
+  color: white;
+}
+.nav-link-active{
+  background-color: #49796b !important;
+  color : white;
+  font-size : 32px;
+  font-weight : bold;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-link{
+    font-size: 20px;
+  }
+  .nav-link-active{
+    font-size: 20px;
+  }
+}

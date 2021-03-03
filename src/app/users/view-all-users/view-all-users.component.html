@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="table-container">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th *ngFor="let heading of headings">{{ heading }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td class="text-capitalize">{{ user.name }}</td>
+            <td class="text-capitalize">{{ user.gender }}</td>
+            <td>{{ user.email }}</td>
+            <td class="text-capitalize">{{ user.mobile }}</td>
+            <td class="text-capitalize">{{ user.category }}</td>
+            <td class="text-capitalize">{{ user.technology }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
